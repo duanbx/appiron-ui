@@ -6,5 +6,11 @@
  * @Description: 
 -->
 <template>
-  <XbbIcon color="red" :size="30" class="xbb-icon-duihao"></XbbIcon>
+  <h1>666</h1>
+  <!-- <AIcon color="1"></AIcon> -->
 </template>
+<script lang="ts" setup>
+import { AIcon } from "appiron-ui"
+import { ElButton } from "element-plus"
+console.log(AIcon, "AIcon")
+</script>

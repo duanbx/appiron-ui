@@ -36,6 +36,6 @@ npm run dev
 ## dist目录打包出的整体结果
 - es/lib两种规范
 - theme-chalk
-- 最终发布的模块就是dist模块 -》 element-plus -》 xbb-plus
+- 最终发布的模块就是appiron-ui模块
 
-## xbb-plus就是我们组件库的整合入口
+## appiron-ui就是我们组件库的整合入口

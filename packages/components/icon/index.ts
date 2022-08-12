@@ -5,14 +5,12 @@
  * @LastEditTime: 2021-10-28 20:39:12
  * @Description: 入口
  */
-import Icon from "./src/icon.vue";
-import { withInstall } from "@xbb-plus/utils/with-install";
+import Icon from "./src/icon.vue"
+import { withInstall } from "@appiron-ui/utils/with-install"
 // Icon.install = function(app: App) {
 //   app.component(Icon.name, Icon)
 // }
 
-const XbbIcon = withInstall(Icon);
-export {
-  XbbIcon
-}
-export default XbbIcon;
+const AIcon = withInstall(Icon)
+export { AIcon }
+export default AIcon

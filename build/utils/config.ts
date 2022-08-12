@@ -3,10 +3,10 @@
  * @Date: 2021-10-29 00:40:52
  * @LastEditors: jing.chen
  * @LastEditTime: 2021-10-29 00:48:24
- * @Description: 
+ * @Description:
  */
-import path from "path";
-import { outDir } from "./paths";
+import path from "path"
+import { outDir } from "./paths"
 export const buildConfig = {
   esm: {
     module: "ESNext", // tsconfig输出的结果es6模块
@@ -16,7 +16,7 @@ export const buildConfig = {
       path: path.resolve(outDir, "es"),
     },
     bundle: {
-      path: "xbb-plus/es",
+      path: "appiron-ui/es",
     },
   },
   cjs: {
@@ -27,8 +27,8 @@ export const buildConfig = {
       path: path.resolve(outDir, "lib"),
     },
     bundle: {
-      path: "xbb-plus/lib",
+      path: "appiron-ui/lib",
     },
   },
-};
-export type BuildConfig = typeof buildConfig;
+}
+export type BuildConfig = typeof buildConfig
