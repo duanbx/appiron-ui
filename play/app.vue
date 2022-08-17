@@ -7,10 +7,7 @@
 -->
 <template>
   <h1>666</h1>
-  <!-- <AIcon color="1"></AIcon> -->
 </template>
 <script lang="ts" setup>
-import { AIcon } from "appiron-ui"
-import { ElButton } from "element-plus"
-console.log(AIcon, "AIcon")
+import {} from "appiron-ui"
 </script>
