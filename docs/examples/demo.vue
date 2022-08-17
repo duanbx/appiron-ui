@@ -50,6 +50,7 @@ import { defineComponent } from "vue"
 import { ElMessage } from "element-plus"
 import { CaretBottom, CaretTop } from "@element-plus/icons-vue"
 import { useClipboard } from "@vueuse/core"
+// import { usePages } from 'vuepress-plugin-use-pages'
 const { isSupported, copy } = useClipboard()
 
 export default defineComponent({
@@ -98,6 +99,11 @@ export default defineComponent({
 .page .theme-default-content {
   padding: 24px;
   margin: 30px;
+  max-width: 800px;
+}
+.page-meta {
+  margin: 0 30px;
+  padding: 0 24px;
   max-width: 800px;
 }
 .description {

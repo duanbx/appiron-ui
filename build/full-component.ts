@@ -11,7 +11,7 @@ import vue from "rollup-plugin-vue"
 import typescript from "rollup-plugin-typescript2"
 import { parallel } from "gulp"
 import path from "path"
-import { outDir, projectRoot, zpRoot } from "./utils/paths"
+import { outDir, zpRoot } from "./utils/paths"
 import { rollup, OutputOptions } from "rollup"
 import fs from "fs/promises"
 import { buildConfig } from "./utils/config"
@@ -59,7 +59,7 @@ async function buildEntry() {
   const config = {
     input: entryPoints,
     plugins: [nodeResolve(), vue(), typescript()],
-    external: (id: string) => /^vue/.test(id) || /^@xbb-plus/.test(id),
+    external: (id: string) => /^vue/.test(id) || /^@appiron-ui/.test(id),
   }
   const bundle = await rollup(config)
   return Promise.all(

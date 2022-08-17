@@ -31,7 +31,7 @@ function copyfont() {
 }
 function copyfullStyle() {
   return src(path.resolve(__dirname, "./dist/**")).pipe(
-    dest(path.resolve(__dirname, "../../appiron-ui/theme-chalk"))
+    dest(path.resolve(__dirname, "../appiron-ui/theme-chalk"))
   )
 }
 

@@ -40,8 +40,9 @@
     "@appiron-ui/components": "workspace:^1.0.0",
     "@appiron-ui/theme-chalk": "workspace:^1.0.0",
     "@appiron-ui/utils": "workspace:^1.0.0",
-    "appiron-ui": "workspace:^1.0.0",
     "@vueuse/core": "^9.1.0",
-    "element-plus": "^2.2.12"
+    "appiron-ui": "workspace:1.0.1",
+    "element-plus": "^2.2.12",
+    "vuepress-plugin-use-pages": "^1.0.5"
   }
 }

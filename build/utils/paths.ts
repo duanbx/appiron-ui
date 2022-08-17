@@ -8,6 +8,6 @@
 import path from "path"
 
 export const projectRoot = path.resolve(__dirname, "../../")
-export const outDir = path.resolve(__dirname, "../../appiron-ui")
-export const zpRoot = path.resolve(__dirname, "../../packages/appiron-ui")
+export const outDir = path.resolve(__dirname, "../../packages/appiron-ui")
+export const zpRoot = path.resolve(__dirname, "../../packages/appiron-ui-dev")
 export const compRoot = path.resolve(projectRoot, "packages/components")

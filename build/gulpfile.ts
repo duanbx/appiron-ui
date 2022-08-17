@@ -5,8 +5,7 @@
  * @LastEditTime: 2021-11-15 14:39:38
  * @Description: 打包
  */
-import path from "path"
-import { series, parallel, src, dest, task } from "gulp"
+import { series, parallel } from "gulp"
 import { run, withTaskName } from "./utils"
 import { genTypes } from "./gen-types"
 import { outDir, zpRoot } from "./utils/paths"
@@ -15,11 +14,6 @@ import { outDir, zpRoot } from "./utils/paths"
 
 const copySourceCode = () => async () => {
   await run(`cp ${zpRoot}/package.json ${outDir}/package.json`)
-}
-function copyBuild() {
-  return src(path.resolve(__dirname, "../appiron-ui/**")).pipe(
-    dest("../node_modules/appiron-ui")
-  )
 }
 
 //1.打包样式 2.打包工具方法 2.打包所有组件 3.打包每个组件 4.生成一个组件库 5.发布组件
@@ -34,11 +28,7 @@ export default series(
     ), // 执行build命令时会调用rollup, 我们给rollup传递参数buildFullComponent 那么就会执行导出任务叫 buildFullComponent
     withTaskName("buildComponent", () => run("pnpm run build buildComponent"))
   ),
-  parallel(genTypes, copySourceCode()),
-  withTaskName("cleanDist", async () =>
-    run("rm -rf ./node_modeles/appiron-ui")
-  ),
-  parallel(copyBuild)
+  parallel(genTypes, copySourceCode())
 )
 
 //  这是一个任务
