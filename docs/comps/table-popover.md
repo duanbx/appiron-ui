@@ -1,4 +1,4 @@
-# TablePopover 表格列排序
+# TablePopover 列排序
 
 基于 element-plus 二次封装
 

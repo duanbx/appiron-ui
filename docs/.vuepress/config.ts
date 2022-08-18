@@ -3,7 +3,7 @@ import fs from "fs"
 import { defineUserConfig, defaultTheme } from "vuepress"
 import { searchPlugin } from "@vuepress/plugin-search"
 import { containerPlugin } from "@vuepress/plugin-container"
-import { usePagesPlugin } from "vuepress-plugin-use-pages"
+import { recoTheme } from "vuepress-theme-reco"
 // import { registerComponentsPlugin } from "@vuepress/plugin-register-components"
 import { highlight } from "./utils/highlight"
 export default defineUserConfig({
@@ -61,9 +61,8 @@ export default defineUserConfig({
         return "</demo>\n"
       },
     }),
-    usePagesPlugin(),
   ],
-  theme: defaultTheme({
+  theme: recoTheme({
     logo: "/images/logo.png",
     lastUpdated: true,
     lastUpdatedText: "更新时间",
@@ -82,25 +81,12 @@ export default defineUserConfig({
         activeMatch: "/comps",
       },
     ],
-    sidebar: {
-      "/guid/": [
-        {
-          text: "安装",
-          link: "/guid/",
-        },
-      ],
+    series: {
+      "/guid/": ["/guid"],
       "/comps/": [
-        // {
-        //   text: "图标",
-        //   link: "/comps/icon.md",
-        // },
         {
-          text: "表格",
-          link: "/comps/table.md",
-        },
-        {
-          text: "表格列排序",
-          link: "/comps/table-popover.md",
+          text: "Tabel 表格",
+          children: ["/comps/table", "/comps/table-popover"],
         },
       ],
     },

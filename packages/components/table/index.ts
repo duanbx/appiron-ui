@@ -9,6 +9,7 @@
  */
 import Table from "./src/table.vue"
 import { withInstall } from "@appiron-ui/utils/with-install"
+import "./src/index.scss"
 
 const ATable = withInstall(Table)
 export { ATable }

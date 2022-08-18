@@ -1,15 +1,9 @@
 <template>
-  <a-table
-    showCheckBox
-    showIndex
-    :data="data.data"
-    :tableColumn="data.tableColumn"
-  >
+  <a-table showIndex :data="data.data" :tableColumn="data.tableColumn">
     <template #nameCol> 自定义姓名 </template>
   </a-table>
 </template>
 <script lang="ts" setup>
-import { ATable } from "appiron-ui"
 import { reactive } from "vue"
 const data = reactive({
   data: [

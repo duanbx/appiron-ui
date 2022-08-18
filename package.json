@@ -43,6 +43,6 @@
     "@vueuse/core": "^9.1.0",
     "appiron-ui": "workspace:1.0.1",
     "element-plus": "^2.2.12",
-    "vuepress-plugin-use-pages": "^1.0.5"
+    "vuepress-theme-reco": "^2.0.0-beta.33"
   }
 }

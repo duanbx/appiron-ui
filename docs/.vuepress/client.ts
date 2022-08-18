@@ -6,14 +6,18 @@ import elementPlus from "element-plus"
 import "element-plus/dist/index.css"
 import "element-plus/theme-chalk/dark/css-vars.css"
 
-import APPIronUI from "appiron-ui"
+import * as APPIronUI from "@appiron-ui/components"
 import "appiron-ui/theme-chalk/index.css"
 
 export default defineClientConfig({
   enhance({ app }) {
     const files = (import.meta as any).globEager("../examples/**/**.vue")
     app.use(elementPlus)
-    app.use(APPIronUI)
+    Object.keys(APPIronUI).forEach((key) => {
+      app.component(key, APPIronUI[key])
+    })
+
+    // app.use(APPIronUI)
     //依次进行注册
     Object.keys(files).forEach((key) => {
       //	字符串首字母大写处理

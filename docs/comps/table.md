@@ -1,4 +1,4 @@
-# Table 表格
+# Table 基础表格
 
 基于 element-plus 二次封装
 
@@ -16,7 +16,7 @@ table/table
 
 勾选和序列的表格展示用法。
 
-:::demo 只需要传入 showCheckBox showIndex 即可
+:::demo 传入 showIndex 可显示序号，传入 checkList 可显示勾选，如果 checkList 是数组为多选，对象为单选
 
 table/check-table
 
@@ -31,3 +31,15 @@ table/check-table
 table/column-table
 
 :::
+
+## Table 属性
+
+| 属性              | 说明                                           | 类型            | 可选值 | 默认值    |
+| ----------------- | ---------------------------------------------- | --------------- | ------ | --------- |
+| data              | 表格数据                                       | unknow[]        | -      | []        |
+| table-column      | 表格列数组                                     | Column[]        | -      | []        |
+| row-key           | 表格列唯一 key,启用 checkList 必须传，不能重复 | String          | -      | id        |
+| check-list        | 默认勾选的数据                                 | Array \| Object |        | Undefined |
+| reserve-selection | 分页的时候是否记录所有分页的勾选数据           | Boolean         |        | false     |
+
+| show-index | 是否显示序号 | Boolean | - | false |

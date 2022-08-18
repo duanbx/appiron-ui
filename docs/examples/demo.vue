@@ -96,28 +96,49 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.page .theme-default-content {
-  padding: 24px;
-  margin: 30px;
-  max-width: 800px;
+.navbar-container {
+  border-bottom: 1px solid var(--el-border-color);
 }
-.page-meta {
-  margin: 0 30px;
-  padding: 0 24px;
-  max-width: 800px;
+.theme-container table:not(.el-table__body) {
+  tr,
+  td,
+  th {
+    border-width: 0;
+    border-right-width: 0;
+  }
+  tr {
+    border-bottom-width: 1px;
+  }
+}
+.navbar-container .site-brand .logo {
+  width: auto;
+}
+.navbar-links-item > a:not(.external).router-link-active,
+.navbar-links-item > a:not(.external):hover {
+  margin-bottom: -2px;
+  border-bottom: 2px solid rgb(73 84 230 / var(--tw-text-opacity));
 }
 .description {
   margin: 16px 0;
 }
+
 .container {
   background-color: var(--el-bg-color);
-  border-color: var(--c-border);
-  table {
+  // border-color: var(--c-border);
+  & + h2 {
+    &::before {
+      border: none;
+    }
+  }
+  .el-table__header {
+    margin: 0;
+  }
+  .el-table__body {
     margin: 0;
     tr,
-    td,
-    th {
-      border: none;
+    th,
+    td {
+      border-color: var(--el-border-color) !important;
     }
   }
   .look-code {
@@ -157,7 +178,7 @@ export default defineComponent({
   }
   .el-collapse-item__wrap {
     border: none;
-    background-color: var(--c-bg);
+    // background-color: var(--c-bg);
   }
   .el-collapse-item__arrow {
     display: none;
@@ -166,11 +187,12 @@ export default defineComponent({
     height: 24px;
     padding: 8px;
     margin: 0;
+    box-sizing: content-box;
     display: flex;
     justify-content: flex-end;
-    border-top: 1px solid var(--c-border);
+    border-top: 1px solid var(--el-border-color);
     border-bottom: none;
-    background-color: var(--c-bg);
+    // background-color: var(--c-bg);
     cursor: pointer;
     color: #909399;
     transition: 0.2s;
@@ -178,10 +200,6 @@ export default defineComponent({
       line-height: 24px;
       padding: 8px 16px 8px 8px;
       margin-right: -8px;
-    }
-    .el-tooltip__trigger {
-      position: relative;
-      top: 4px;
     }
   }
   .el-collapse-item__content {

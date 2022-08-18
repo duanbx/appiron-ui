@@ -1,7 +1,24 @@
 ---
 home: true
-heroImage: https://artice-code-1258339218.cos.ap-beijing.myqcloud.com/vuepress/element-index.png
-heroText: APPIron-UI
+modules:
+  - BannerBrand
+  - MdContent
+  # - Footer
+bannerBrand:
+  heroImage: https://artice-code-1258339218.cos.ap-beijing.myqcloud.com/vuepress/element-index.png
+  heroImageStyle:
+    maxWidth: "200px"
+    width: "100%"
+    display: block
+    margin: "0 auto 2rem"
+    borderRadius: "1rem"
+  bgImage: "/bg.svg"
+  heroText: APPIron
+  tagline: 基于Element-plus二次封装。
+  buttons:
+    - { text: 指南, link: "/docs/guid" }
+isShowTitleInHome: false
+
 features:
   - title: 一致性 Consistency
     details: 与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念

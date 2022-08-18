@@ -1,13 +1,9 @@
 <!--
  * @Author: jing.chen
  * @Date: 2021-10-28 19:12:26
- * @LastEditors: jing.chen
- * @LastEditTime: 2021-10-28 22:05:21
+ * @LastEditors: 段本显
+ * @LastEditTime: 2022-08-18 15:38:49
  * @Description: 
 -->
-<template>
-  <h1>666</h1>
-</template>
-<script lang="ts" setup>
-import {} from "appiron-ui"
-</script>
+<template></template>
+<script lang="ts" setup></script>

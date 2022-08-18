@@ -9,15 +9,26 @@ export type Column = {
 export const tableProps = {
   data: {
     type: Array,
-    required: true,
+    default() {
+      return []
+    },
   },
   tableColumn: {
     type: Array as () => Column[],
-    required: true,
+    default() {
+      return []
+    },
   },
-  showCheckBox: {
+  checkList: {
+    type: Object,
+  },
+  reserveSelection: {
     type: Boolean,
-    default: false,
+    default: true,
+  },
+  rowKey: {
+    type: String,
+    default: "id",
   },
   showIndex: {
     type: Boolean,
