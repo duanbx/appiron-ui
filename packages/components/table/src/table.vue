@@ -1,9 +1,9 @@
 <!--
  * @Author: 段本显
- * @FilePath: \appiron-ui\src\package\table\a-table.vue
+ * @FilePath: /appiron-ui/packages/components/table/src/table.vue
  * @Date: 2021-12-14 09:37:36
  * @LastEditors: 段本显
- * @LastEditTime: 2021-12-16 11:47:25
+ * @LastEditTime: 2022-08-18 16:19:12
  * @Email: duanbenxian@jianq.com
  * 如果有bug，那肯定不是我的锅，噜噜噜
 -->
@@ -82,8 +82,6 @@ export default defineComponent({
   },
   methods: {
     handleSelectionChange(val) {
-      console.log(val, this.checkList)
-
       if (this.load) {
         if (Array.isArray(this.checkList)) {
           if (Array.isArray(val)) {
