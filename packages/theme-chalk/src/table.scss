@@ -1,3 +1,4 @@
+@use "./mixins/mixin.scss" as *;
 .table-radio {
   .el-radio__label {
     display: none;

@@ -7,7 +7,7 @@ import { recoTheme } from "vuepress-theme-reco"
 // import { registerComponentsPlugin } from "@vuepress/plugin-register-components"
 import { highlight } from "./utils/highlight"
 export default defineUserConfig({
-  base: "/docs/", //默认路径
+  base: "/appiron-ui/", //默认路径
   title: "",
   description: "VuePress搭建APPIron的组件库文档教程示例代码",
   lang: "zh-CN",

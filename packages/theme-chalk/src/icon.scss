@@ -1,14 +1,15 @@
-@use './mixins/mixin.scss' as *;
+@use "./mixins/mixin.scss" as *;
 
 @font-face {
-  font-family: "xbb-ui-icons"; /* Project id 2900485 */
-  src: url('./fonts/iconfont.woff2') format('woff2'),
-       url('./fonts/iconfont.woff') format('woff'),
-       url('./fonts/iconfont.ttf') format('truetype');
+  font-family: "appiron-ui-icons"; /* Project id 2900485 */
+  src: url("./fonts/iconfont.woff2") format("woff2"),
+    url("./fonts/iconfont.woff") format("woff"),
+    url("./fonts/iconfont.ttf") format("truetype");
 }
 
-[class^='#{$namespace}-icon'],[class*='#{$namespace}-icon'] {
-  font-family: "xbb-ui-icons" !important;
+[class^="#{$namespace}-icon"],
+[class*="#{$namespace}-icon"] {
+  font-family: "appiron-ui-icons" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -66,4 +67,3 @@
 .#{$namespace}-icon-zhengceguizhang:before {
   content: "\e618";
 }
-

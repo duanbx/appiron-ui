@@ -1,15 +1,15 @@
 /*
  * @Author: jing.chen
  * @Date: 2021-11-01 19:20:34
- * @LastEditors: jing.chen
- * @LastEditTime: 2021-11-15 14:03:40
+ * @LastEditors: 段本显
+ * @LastEditTime: 2022-08-18 16:54:13
  * @Description:
  */
-import { AIcon } from "@appiron-ui/components"
+import { ATable, ATablePopover } from "@appiron-ui/components"
 import type { App } from "vue" // ts中的优化只获取类型
 // ....
 
-const components = [AIcon]
+const components = [ATable, ATablePopover]
 const install = (app: App) => {
   // 每个组件在编写的时候都提供了install方法
 
