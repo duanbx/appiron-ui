@@ -16,7 +16,7 @@ bannerBrand:
   heroText: APPIron
   tagline: 基于Element-plus二次封装。
   buttons:
-    - { text: 指南, link: "/appiron/guid" }
+    - { text: 指南, link: "/appiron-ui/guid" }
 isShowTitleInHome: false
 
 features:

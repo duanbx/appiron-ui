@@ -77,8 +77,7 @@ export default defineUserConfig({
       },
       {
         text: "组件",
-        link: "/comps/table.html",
-        activeMatch: "/comps",
+        link: "/comps/",
       },
     ],
     series: {
